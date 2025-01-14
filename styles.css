@@ -120,3 +120,107 @@ footer {
 }
 
 <link rel="stylesheet" href="assets/styles.css">
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5; /* Light gray for the background */
+  color: #333;
+}
+
+/* Header Navigation */
+header {
+  background-color: #003399; /* Dark blue */
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #0056cc; /* Slightly brighter blue for active links */
+}
+
+/* Main Content Area */
+main {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+  background-color: #fff; /* White card-style background */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Section Styling */
+.intro {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffc300; /* Yellow highlight */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+  color: #003399; /* Dark blue for headings */
+}
+
+/* Footer */
+footer {
+  background-color: #003399;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Staff Cards */
+.staff-card {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 300px;
+  background-color: #f9f9f9; /* Light gray card */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.staff-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.staff-card h2 {
+  color: #003399;
+}
+
+.staff-card p {
+  font-style: italic;
+  color: #666;
+}
