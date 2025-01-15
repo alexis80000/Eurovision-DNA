@@ -263,3 +263,27 @@ hr {
   border-top: 2px solid #ccc;
   margin: 30px 0;
 }
+
+.hero-section {
+  background-color: #ffcc00; /* Bright yellow */
+  padding: 50px 20px; /* Increase padding to make it larger */
+  text-align: center; /* Center-align the content */
+  border-radius: 10px; /* Add slight round corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+.hero-section h1 {
+  font-family: 'Arial Black', Gadget, sans-serif; /* Bold and impactful font */
+  font-size: 3rem; /* Increase font size */
+  color: #002366; /* Dark blue for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow for style */
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-family: 'Georgia', serif; /* Elegant serif font for contrast */
+  font-size: 1.2rem; /* Moderate size for readability */
+  color: #333333; /* Neutral color for description */
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
