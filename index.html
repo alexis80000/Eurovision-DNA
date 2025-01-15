@@ -3,79 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eurovision DNA
-    
-  Your ultimate source for Eurovision updates and general music news!</title>
+  <title>Eurovision DNA - Your Ultimate Source for Eurovision and Music in General Updates!</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
   <script>
-  AOS.init();
-</script>
-
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init();
+    });
+  </script>
 </head>
 
-  <body>
+<body>
+  <!-- Header Section -->
   <header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="articles.html" class="active">Articles</a></li>
+        <li><a href="articles.html">Articles</a></li>
         <li><a href="staff.html">Staff</a></li>
       </ul>
     </nav>
   </header>
 
- <hr class="section-divider">
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>Eurovision DNA</h1>
+      <p>Your ultimate source for Eurovision updates and general music news!</p>
+    </div>
+  </section>
 
-      <!-- Hero Section -->
-    <section class="hero">
-        <h2>Eurovision DNA</h2>
-    </section>
+  <!-- Eurovision News Section -->
+  <section class="news-section" data-aos="fade-up">
+    <h2>Eurovision News</h2>
+    <div class="news-container">
+      <!-- Article 1 -->
+      <article class="news-item">
+        <img src="assets/images/Flag_of_Montenegro.svg.png" alt="Montenegro Flag">
+        <h3>Montenegro Returns to Eurovision</h3>
+        <p>After a two-year hiatus, RTCG confirms Montenegro's return to Eurovision 2025. 
+          <a href="https://eurovision.tv/story/montenegro-return-eurovision-song-contest-2025" target="_blank" rel="noopener noreferrer">Read more</a>.
+        </p>
+      </article>
+      <!-- Article 2 -->
+      <article class="news-item">
+        <img src="assets/images/poland-konkursu-piosenki-eurowizji-2024.jpg" alt="Poland National Final Logo">
+        <h3>Poland’s National Finalists Revealed</h3>
+        <p>Poland announces its finalists for Eurovision 2025. 
+          <a href="https://eurovoix.com/2025/01/14/poland-eurovision-2025-national-selection-participants-revealed/" target="_blank" rel="noopener noreferrer">Learn more</a>.
+        </p>
+      </article>
+      <!-- Article 3 -->
+      <article class="news-item">
+        <img src="assets/images/ab6761610000e5eb569eae3501cbdab72e444b37.jpeg" alt="Costee">
+        <h3>Costee releases "Sekaisin" from UMK 2025</h3>
+        <p>Learn more 
+          <a href="https://www.esccovers.com/finland-costee-releases-sekaisin-from-umk-2025/" target="_blank" rel="noopener noreferrer">here</a>.
+        </p>
+      </article>
+    </div>
+  </section>
 
-  <hr class="section-divider">
-<h2>Eurovision News</h2>
+  <!-- General Music News Section -->
+  <section class="music-news" data-aos="fade-up">
+    <h2>Latest General Music News</h2>
+    <div class="news-container">
+      <article class="news-item">
+        <img src="assets/images/Marren_Morris.jpg" alt="Marren Morris">
+        <img src="assets/images/Julia_Michaels.jpg" alt="Julia Michaels">
+        <h3>Julia Michaels releases duet with Marren Morris</h3>
+        <p>The single "Scissors" is now on Spotify and plenty of other platforms. 
+          <a href="https://open.spotify.com/intl-pt/track/3JNgfzJac40BSzCc3H0e1i?si=a7cf78aa0b8d44a6" target="_blank" rel="noopener noreferrer">Listen here</a>, 
+          <a href="https://youtu.be/0kxyE34B_rw?si=OwT6Xfkum58nBawD" target="_blank" rel="noopener noreferrer">or here</a>.
+        </p>
+      </article>
+    </div>
+  </section>
 
-    <!-- Eurovision News -->
-  
-            <article>
-    <h3>Montenegro Returns to Eurovision</h3>
-    <img src="assets/images/Flag_of_Montenegro.svg.png" alt="Montenegro Flag" style="width: 100px; height: auto;">
-    <p>After a two-year hiatus, RTCG confirms Montenegro's return to Eurovision 2025. <a href="https://eurovision.tv/story/montenegro-return-eurovision-song-contest-2025">Read more</a>.</p>
-  </article>
-  <article>
-    <h3>Poland’s National Finalists Revealed</h3>
-    <img src="assets/images/poland-konkursu-piosenki-eurowizji-2024.jpg" alt="Poland National Final Logo" style="width: 150px; height: auto;">
-    <p>Poland announces its finalists for Eurovision 2025. <a href="https://eurovoix.com/2025/01/14/poland-eurovision-2025-national-selection-participants-revealed/">Learn more</a>.</p>
-  </article>
-            <article>
-  <h2>Costee releases "Sekaisin" from UMK 2025</h2>
-                <img src="assets/images/ab6761610000e5eb569eae3501cbdab72e444b37.jpeg" alt="Costee" style="width: 100px; height: auto;">
-  <p>Learn more <a href="https://www.esccovers.com/finland-costee-releases-sekaisin-from-umk-2025/?fbclid=IwY2xjawHzXLVleHRuA2FlbQIxMQABHUyqRS1yOIt8DYiSxzHWd7ZOxwOErYnNiMkOj1BxCPHSbTYs0IaZG2x7dA_aem_oQzm2VRE2Q3iWW9tyIQpnQ" target="_blank" rel="noopener noreferrer">here</a>.</p>
-</article>
-
-         <hr class="section-divider">
-
-       <section class="general-music-news">
-  <h2>Latest General Music News</h2>
-  <!-- General music news content -->
-</section>
-            <article>
-    <h3>Julia Michaels releases duet with Marren Morris</h3>
-    <img src="assets/images/Marren_Morris.jpg" alt="Marren Morris" style="width: 100px; height: auto;">
-<img src="assets/images/Julia_Michaels.jpg" alt="Julia Michaels" style="width: 100px; height: auto;">
-    <p>The single "Scissors" is now on Spotify and plenty of other platforms. <a href="https://open.spotify.com/intl-pt/track/3JNgfzJac40BSzCc3H0e1i?si=a7cf78aa0b8d44a6">listen here</a>, <a href="https://youtu.be/0kxyE34B_rw?si=OwT6Xfkum58nBawD">or here.</a></p>
-  </article>
-            
-</section>
-    </main>
-
- <hr class="section-divider">
-    
-    <footer>
-        <p>&copy; 2025 Eurovision DNA. All rights reserved.</p>
-    </footer>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Eurovision DNA. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
