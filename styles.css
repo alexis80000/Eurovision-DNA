@@ -339,4 +339,29 @@ hr {
   font-size: 4rem; /* Very large font size */
   color: #333; /* Dark text for contrast */
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Stylish shadow */
-  letter-spacing: 2px; /* Add spaci
+  letter-spacing: 2px; /* Add space
+
+    header {
+  background-color: yellow; /* Adjust as per design */
+  text-align: center;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: 'CoolFont', sans-serif; /* Replace with your desired font */
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
