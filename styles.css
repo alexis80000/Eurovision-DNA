@@ -287,3 +287,34 @@ hr {
   line-height: 1.5;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
 }
+
+/* Header styling */
+.header {
+  background-color: #FFD700; /* Bright yellow background */
+  padding: 60px 20px; /* Add sufficient padding to enlarge the rectangle */
+  text-align: center; /* Center text */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  margin-bottom: 30px; /* Space below the rectangle */
+}
+
+/* Google Fonts: Import in your <head> */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+/* Header Title */
+.header h1 {
+  font-family: 'Montserrat', sans-serif; /* Stylish Google Font */
+  font-size: 3rem; /* Increase size */
+  color: #1A1A1A; /* Dark color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Text shadow */
+  margin: 0; /* Remove default margins */
+}
+
+/* Header Subtitle */
+.header p {
+  font-family: 'Roboto', sans-serif; /* Pair font for subtitle */
+  font-size: 1.5rem; /* Adjust size */
+  color: #333; /* Complementary color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-top: 10px; /* Space above */
+}
