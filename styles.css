@@ -5,13 +5,12 @@
 body, h1, h2, h3, p, nav, a {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
     box-sizing: border-box;
 }
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -195,8 +194,7 @@ hr {
     margin: 30px 0;
 }
 
-background: linear-gradient(45deg, #0047AB, #ffcc00);
-
+/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -212,17 +210,14 @@ background: linear-gradient(45deg, #0047AB, #ffcc00);
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Button Hover Effect */
 button:hover {
     transform: scale(1.1);
     background-color: #0056cc;
     transition: 0.3s ease-in-out;
 }
 
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-toggleSwitch.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode');
-});
-
+/* Sticky Navigation Bar */
 nav {
     position: sticky;
     top: 0;
