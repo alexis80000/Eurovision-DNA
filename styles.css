@@ -1,3 +1,6 @@
+/* Global Imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&family=Oswald:wght@700&display=swap');
+
 /* General Reset */
 body, h1, h2, h3, p, nav, a {
     margin: 0;
@@ -6,401 +9,188 @@ body, h1, h2, h3, p, nav, a {
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    line-height: 1.6;
-    background: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header Styling */
 header {
-    background: #0047AB;
-    padding: 1rem 0;
+    background-color: #FFD700;
+    padding: 60px 20px;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #333;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
     margin: 0 1rem;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-.hero {
-    padding: 2rem;
-    text-align: center;
-    background: #ffcc00;
-    color: #0047AB;
-}
-
-.news-highlights {
-    padding: 1rem;
-    background: #fff;
-    margin: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-article {
-    margin-bottom: 1rem;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #0047AB;
+nav ul li a {
+    text-decoration: none;
     color: #fff;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
-}
-
-header {
-  background-color: #003399;
-  padding: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-nav ul li a.active {
-  text-decoration: underline;
-}
-
-.intro {
-  text-align: center;
-  margin: 2rem auto;
-  padding: 1rem;
-  background-color: #ffc300;
-  border-radius: 8px;
-  max-width: 800px;
-}
-
-.staff-card {
-  text-align: center;
-  margin: 2rem auto;
-  max-width: 400px;
-}
-
-.staff-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-footer {
-  background-color: #003399;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-<link rel="stylesheet" href="assets/styles.css">
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f5; /* Light gray for the background */
-  color: #333;
-}
-
-/* Header Navigation */
-header {
-  background-color: #003399; /* Dark blue */
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-  background-color: #0056cc; /* Slightly brighter blue for active links */
+    background-color: #0056cc;
+    transform: scale(1.1);
 }
 
-/* Main Content Area */
-main {
-  margin: 2rem auto;
-  max-width: 1200px;
-  padding: 1rem;
-  background-color: #fff; /* White card-style background */
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+/* Hero Section */
+.hero-section {
+    background-color: #ffcc00;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
 }
 
-/* Intro Section Styling */
+.hero-section h1 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 3rem;
+    color: #002366;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #333333;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Intro Section */
 .intro {
-  text-align: center;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #ffc300; /* Yellow highlight */
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffc300;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
 .intro h1 {
-  color: #003399; /* Dark blue for headings */
-}
-
-/* Footer */
-footer {
-  background-color: #003399;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+    color: #003399;
 }
 
 /* Staff Cards */
 .staff-card {
-  text-align: center;
-  margin: 2rem auto;
-  max-width: 300px;
-  background-color: #f9f9f9; /* Light gray card */
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .staff-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.staff-card img:hover {
+    transform: scale(1.05);
 }
 
 .staff-card h2 {
-  color: #003399;
+    color: #003399;
 }
 
 .staff-card p {
-  font-style: italic;
-  color: #666;
+    font-style: italic;
+    color: #666;
+}
+
+/* Main Content Area */
+main {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Section Divider */
 .section-divider {
-  border-top: 2px solid #003399;
-  margin: 2rem 0;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+    border-top: 2px solid #003399;
+    margin: 2rem 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Smooth hover effects */
-nav ul li a:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.staff-card img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-}
-
+/* Eurovision News */
 .eurovision-news {
-  background-color: #f0f8ff; /* Light blue */
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
+/* General Music News */
 .general-music-news {
-  background-color: #ffe4e1; /* Light pink */
-  padding: 20px;
-  border-radius: 8px;
+    background-color: #ffe4e1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #003399;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 hr {
-  border: none;
-  border-top: 2px solid #ccc;
-  margin: 30px 0;
-}
-
-.hero-section {
-  background-color: #ffcc00; /* Bright yellow */
-  padding: 50px 20px; /* Increase padding to make it larger */
-  text-align: center; /* Center-align the content */
-  border-radius: 10px; /* Add slight round corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
-}
-
-.hero-section h1 {
-  font-family: 'Arial Black', Gadget, sans-serif; /* Bold and impactful font */
-  font-size: 3rem; /* Increase font size */
-  color: #002366; /* Dark blue for contrast */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow for style */
-  margin-bottom: 10px;
-}
-
-.hero-section p {
-  font-family: 'Georgia', serif; /* Elegant serif font for contrast */
-  font-size: 1.2rem; /* Moderate size for readability */
-  color: #333333; /* Neutral color for description */
-  line-height: 1.5;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
-}
-
-/* Header styling */
-.header {
-  background-color: #FFD700; /* Bright yellow background */
-  padding: 60px 20px; /* Add sufficient padding to enlarge the rectangle */
-  text-align: center; /* Center text */
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  margin-bottom: 30px; /* Space below the rectangle */
-}
-
-/* Google Fonts: Import in your <head> */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
-
-/* Header Title */
-.header h1 {
-  font-family: 'Montserrat', sans-serif; /* Stylish Google Font */
-  font-size: 3rem; /* Increase size */
-  color: #1A1A1A; /* Dark color */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Text shadow */
-  margin: 0; /* Remove default margins */
-}
-
-/* Header Subtitle */
-.header p {
-  font-family: 'Roboto', sans-serif; /* Pair font for subtitle */
-  font-size: 1.5rem; /* Adjust size */
-  color: #333; /* Complementary color */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  margin-top: 10px; /* Space above */
-}
-
-/* Header styling */
-.header {
-  background-color: #FFD700; /* Bright yellow background */
-  padding: 100px 20px; /* Large padding to make the rectangle bigger */
-  text-align: center; /* Center text */
-  border-radius: 20px; /* Rounded corners for a modern look */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Bold shadow for depth */
-  margin-bottom: 30px; /* Space below the header */
-  position: relative; /* Position for additional effects */
-}
-
-/* Google Fonts: Import in your <head> */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacifico&display=swap');
-
-/* Header Title */
-.header h1 {
-  font-family: 'Oswald', sans-serif; /* Alternative, bold font */
-  font-size: 4rem; /* Very large font size */
-  color: #333; /* Dark text for contrast */
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Stylish shadow */
-  letter-spacing: 2px; /* Add space
-
-    header {
-  background-color: yellow; /* Adjust as per design */
-  text-align: center;
-  padding: 20px;
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  font-family: 'CoolFont', sans-serif; /* Replace with your desired font */
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&family=Oswald:wght@700&display=swap');
-
-.header {
-  background-color: #FFD700;
-  padding: 60px 20px;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  margin-bottom: 30px;
-}
-.header h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 3rem;
-  color: #333;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-}
-.header p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  color: #333;
-  margin-top: 10px;
-}
-
-letter-spacing: 2px;
-
-/* Adjust as per design */
-header {
-  background-color: yellow;
-  text-align: center;
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 30px 0;
 }
