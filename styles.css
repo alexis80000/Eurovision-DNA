@@ -222,3 +222,35 @@ footer {
     }
 }
 
+/* General improvements */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Improve Card Styling */
+.news-card, .staff-card, .general-music-news {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-card:hover, .staff-card:hover, .general-music-news:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Images inside cards */
+.news-card img, .staff-card img {
+  max-width: 100px;
+  height: auto;
+  margin: 10px;
+  border-radius: 4px;
+  border: 2px solid #eaeaea
