@@ -245,3 +245,21 @@ nav ul li a:hover {
   transition: transform 0.3s ease-in-out;
 }
 
+.eurovision-news {
+  background-color: #f0f8ff; /* Light blue */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.general-music-news {
+  background-color: #ffe4e1; /* Light pink */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 30px 0;
+}
