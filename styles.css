@@ -1,10 +1,11 @@
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Modern and clean typography */
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark text for readability */
 }
 
 /* Header */
@@ -22,24 +23,35 @@ header h1 {
     font-size: 24px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #003399;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 20px;
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
-    color: white;
+    color: #FFD700;
     text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #0056cc;
 }
 
 /* Hero Section */
@@ -52,125 +64,105 @@ nav ul li a:hover {
 
 .hero h2 {
     font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .hero p {
     font-size: 18px;
 }
 
+/* Section Titles */
+h2 {
+    font-size: 2rem;
+    color: #003399; /* Eurovision-themed blue */
+    border-bottom: 2px solid #FFD700; /* Gold underline */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /* News Section */
-.news {
+.news-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
 }
 
-article {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+.news-card, .staff-card {
+    background-color: #ffffff; /* Clean white background */
     padding: 20px;
-    width: 300px;
+    margin: 20px auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animations */
+    flex: 1 1 calc(33% - 40px);
+    max-width: calc(33% - 40px);
 }
 
-article img {
-    width: 100%;
-    border-radius: 8px;
+.news-card:hover, .staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger hover shadow */
 }
 
-article h3 {
-    font-size: 20px;
-    margin-top: 10px;
+@media screen and (max-width: 768px) {
+    .news-card, .staff-card {
+        flex: 1 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
 }
 
-article p {
-    font-size: 16px;
+/* Images inside Cards */
+.news-card img, .staff-card img {
+    max-width: 100px;
+    height: auto;
+    margin: 10px;
+    border-radius: 4px; /* Slightly rounded edges */
+    border: 2px solid #eaeaea; /* Light border for definition */
+    transition: transform 0.3s, border-color 0.3s; /* Smooth scaling and border highlight */
 }
 
+.news-card img:hover, .staff-card img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    border-color: #FFD700; /* Highlight border color */
+}
+
+/* Links */
 a {
     color: #003399;
     text-decoration: none;
     font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #003399;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-.navbar {
-    background-color: #003399;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #FFD700;
-    transform: scale(1.1);
-}
-
-.news-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.news-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.news-card h2 {
-    font-size: 1.5rem;
-    color: #003399;
-    margin-bottom: 10px;
-}
-
-.news-card p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-}
-
-.news-card a {
-    color: #003399;
-    text-decoration: underline;
-    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.news-card a:hover {
+a:hover {
     color: #FFD700;
+    text-decoration: underline;
 }
 
+/* Buttons */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0047AB; /* Strong blue */
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a.button:hover {
+    background-color: #002366; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Footer */
 .footer {
     background: #001a66;
-    color: #fff;
+    color: white;
     padding: 20px 0;
     text-align: center;
     font-size: 0.9rem;
@@ -190,11 +182,7 @@ footer {
 }
 
 .footer a:hover {
-    color: #fff;
-}
-
-.footer-icons {
-    margin-top: 10px;
+    color: white;
 }
 
 .footer-icons img {
@@ -204,9 +192,10 @@ footer {
 }
 
 .footer-icons img:hover {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Slight zoom effect */
 }
 
+/* Animations */
 .fade-in {
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -221,149 +210,3 @@ footer {
         transform: translateY(0);
     }
 }
-
-/* General improvements */
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.8;
-  color: #333;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-}
-
-/* Improve Card Styling */
-.news-card, .staff-card, .general-music-news {
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.news-card:hover, .staff-card:hover, .general-music-news:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Images inside cards */
-.news-card img, .staff-card img {
-  max-width: 100px;
-  height: auto;
-  margin: 10px;
-  border-radius: 4px;
-  border: 2px solid #eaeaea
-
-/* General Styling */
-body {
-  font-family: 'Roboto', sans-serif; /* Makes text look modern */
-  line-height: 1.8;
-  color: #333; /* Dark text for readability */
-  background-color: #f4f4f9; /* Light gray background */
-  margin: 0;
-  padding: 0;
-}
-
-/* Card Design for News and Staff */
-.news-card, .staff-card {
-  background-color: #ffffff; /* White background for clean look */
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.2s, box-shadow 0.2s; /* Animations for hover */
-}
-
-.news-card:hover, .staff-card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
-/* Images inside Cards */
-.news-card img, .staff-card img {
-  max-width: 100px; /* Image stays small */
-  height: auto;
-  margin: 10px;
-  border-radius: 4px; /* Slightly rounded edges */
-  border: 2px solid #eaeaea; /* Light border for definition */
-  transition: transform 0.3s; /* Smooth scaling effect */
-}
-
-.news-card img:hover, .staff-card img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-  border-color: #ffcc00; /* Highlight border color */
-}
-
-/* Button Styling */
-a.button {
-  display: inline-block;
-  text-decoration: none; /* Removes underline */
-  padding: 10px 20px;
-  background-color: #0047AB; /* Strong blue */
-  color: white;
-  border-radius: 5px; /* Rounded button edges */
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s; /* Smooth animation */
-}
-
-a.button:hover {
-  background-color: #002366; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight enlargement */
-}
-
-/* Section Titles */
-h2 {
-  font-size: 2rem; /* Big header text */
-  color: #003399; /* Blue for Eurovision theme */
-  border-bottom: 2px solid #FFD700; /* Gold underline */
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-/* Flexbox Layout for News Cards */
-.news-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.news-card {
-  flex: 1 1 calc(33% - 40px);
-  max-width: calc(33% - 40px);
-}
-
-@media screen and (max-width: 768px) {
-  .news-card {
-    flex: 1 1 calc(100% - 20px);
-    max-width: calc(100% - 20px);
-  }
-}
-
-nav {
-  position: sticky;
-  top: 0;
-  background-color: #003399;
-  z-index: 1000;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #FFD700;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-  background-color: #0056cc;
-}
-
