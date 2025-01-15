@@ -318,3 +318,25 @@ hr {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   margin-top: 10px; /* Space above */
 }
+
+/* Header styling */
+.header {
+  background-color: #FFD700; /* Bright yellow background */
+  padding: 100px 20px; /* Large padding to make the rectangle bigger */
+  text-align: center; /* Center text */
+  border-radius: 20px; /* Rounded corners for a modern look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Bold shadow for depth */
+  margin-bottom: 30px; /* Space below the header */
+  position: relative; /* Position for additional effects */
+}
+
+/* Google Fonts: Import in your <head> */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacifico&display=swap');
+
+/* Header Title */
+.header h1 {
+  font-family: 'Oswald', sans-serif; /* Alternative, bold font */
+  font-size: 4rem; /* Very large font size */
+  color: #333; /* Dark text for contrast */
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Stylish shadow */
+  letter-spacing: 2px; /* Add spaci
