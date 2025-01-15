@@ -254,3 +254,69 @@ body {
   margin: 10px;
   border-radius: 4px;
   border: 2px solid #eaeaea
+
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif; /* Makes text look modern */
+  line-height: 1.8;
+  color: #333; /* Dark text for readability */
+  background-color: #f4f4f9; /* Light gray background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Card Design for News and Staff */
+.news-card, .staff-card {
+  background-color: #ffffff; /* White background for clean look */
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animations for hover */
+}
+
+.news-card:hover, .staff-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Images inside Cards */
+.news-card img, .staff-card img {
+  max-width: 100px; /* Image stays small */
+  height: auto;
+  margin: 10px;
+  border-radius: 4px; /* Slightly rounded edges */
+  border: 2px solid #eaeaea; /* Light border for definition */
+  transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.news-card img:hover, .staff-card img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  border-color: #ffcc00; /* Highlight border color */
+}
+
+/* Button Styling */
+a.button {
+  display: inline-block;
+  text-decoration: none; /* Removes underline */
+  padding: 10px 20px;
+  background-color: #0047AB; /* Strong blue */
+  color: white;
+  border-radius: 5px; /* Rounded button edges */
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth animation */
+}
+
+a.button:hover {
+  background-color: #002366; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight enlargement */
+}
+
+/* Section Titles */
+h2 {
+  font-size: 2rem; /* Big header text */
+  color: #003399; /* Blue for Eurovision theme */
+  border-bottom: 2px solid #FFD700; /* Gold underline */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
